@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: dmozsearch
+Version: 0.0
+Summary: dmozsearch
+Home-page: UNKNOWN
+Author: Olivier Yiptong
+Author-email: olivier@olivieryiptong.com
+License: UNKNOWN
+Description: dmozsearch README
+        
+        
+        0.0
+        ---
+        
+        -  Initial version
+        
+Keywords: open directory dmoz search
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pylons
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

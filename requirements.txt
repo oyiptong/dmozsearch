@@ -1,0 +1,6 @@
+Jinja2==2.6
+zope.sqlalchemy
+MySQL-python==1.2.3
+pyramid==1.2.1
+pyramid-jinja2==1.2
+gunicorn==0.13.4

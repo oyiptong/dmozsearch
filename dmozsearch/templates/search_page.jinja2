@@ -1,0 +1,21 @@
+{% extends "base.jinja2" %}
+{% block content %}
+<h1 id="page_header"><a href="/">dmoz searcher</a></h1>
+<form id="search_form" action="" method="post">
+    <input type="text" name="q" value="{% if query_str %}{{query_str|escape}}{% endif %}" placeholder="Enter a search query"/>
+    <input type="submit" value="search"/>
+</form>
+<hr/>
+{% if results %}
+<ul>
+{% for entry in results %}
+    <li>
+        <a href="{{entry.url}}">{{entry.title}}</a>
+        <p>{{entry.description}}</p>
+    </li>
+{% else %}
+    <li>Sorry, there are no documents matching your search query. Try to search something else.</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
