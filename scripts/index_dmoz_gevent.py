@@ -84,8 +84,7 @@ def process_batch(offset, limit):
 
 if __name__ == '__main__':
     print "starting up"
-    #total = mysql_dir_entry_count()
-    total = 3859348
+    total = mysql_dir_entry_count()
     TOTAL = total
 
     print "entries to be indexed: %d items" % total
