@@ -12,6 +12,7 @@ def search(request):
         if query_str:
             dbsession = DBSession()
             q = dbsession.query(DirectoryEntry).join(DirectorySearchIndex, DirectoryEntry.id==DirectorySearchIndex.id).filter(DirectorySearchIndex.query==query_str)
+            dbsession.close()
             return {"results" : q, "query_str": query_str}
 
     return {}
